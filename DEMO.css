@@ -1,0 +1,195 @@
+
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:linear-gradient(to right,#eef2ff,#dbeafe);
+    color:#222;
+}
+
+
+header{
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+header img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+    margin-bottom:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.3);
+}
+
+header h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+}
+
+
+
+nav{
+    background:#1e293b;
+    text-align:center;
+    padding:15px;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 18px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#facc15;
+}
+
+
+section{
+    padding:40px 0;
+}
+
+.container{
+    width:85%;
+    margin:auto;
+}
+
+
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.25);
+}
+
+.card h2{
+    color:#2563eb;
+    margin-bottom:20px;
+    border-left:6px solid #7c3aed;
+    padding-left:10px;
+}
+
+
+
+.skills-grid{
+    list-style:none;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.skills-grid li{
+    text-align:center;
+    background:#f8fafc;
+    padding:20px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.skills-grid li:hover{
+    background:#dbeafe;
+    transform:scale(1.05);
+}
+
+.skills-grid img{
+    width:90px;
+    height:90px;
+}
+
+
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th{
+    background:#2563eb;
+    color:white;
+    padding:12px;
+}
+
+table td{
+    padding:12px;
+    border:1px solid #ddd;
+}
+
+table tr:nth-child(even){
+    background:#f3f4f6;
+}
+
+table tr:hover{
+    background:#dbeafe;
+}
+
+
+
+h3{
+    color:#7c3aed;
+    margin-top:15px;
+}
+
+/* Contact */
+
+#contact p{
+    font-size:17px;
+    margin:12px 0;
+}
+
+
+footer{
+    background:#1e293b;
+    color:white;
+    text-align:center;
+    padding:18px;
+    font-size:16px;
+}
+
+
+
+@media(max-width:768px){
+
+.skills-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.container{
+    width:95%;
+}
+
+header h1{
+    font-size:32px;
+}
+
+nav a{
+    display:inline-block;
+    margin:8px;
+}
+
+}
+
